@@ -6,4 +6,4 @@ RUN ln -s /var/spool/cron/root /usr/src/jobs
 RUN echo "touch /var/log/cron.log" >> /usr/src/cron.sh
 RUN echo "tail -f /var/log/cron.log" >> /usr/src/cron.sh
 RUN chmod +x /usr/src/cron.sh
-CMD ["bash", "/usr/src/cron.sh"]
+ENTRYPOINT ["bash", "/usr/src/cron.sh"]
