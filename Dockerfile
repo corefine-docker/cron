@@ -1,5 +1,4 @@
 FROM centos:7
-WORKDIR /usr/src
 ADD docker_entrypoint.sh /
 RUN chmod +x /docker_entrypoint.sh
 RUN yum install -y crontabs
