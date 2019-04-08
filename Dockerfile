@@ -1,5 +1,4 @@
 FROM centos:7
-RUN chmod +x /docker_entrypoint.sh
 RUN yum install -y crontabs
 RUN echo "crond start" > /usr/src/cron.sh
 RUN ln -s /var/spool/cron/root /usr/src/jobs
