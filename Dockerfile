@@ -1,4 +1,5 @@
 FROM centos:7
+RUN echo 'Asia/Shanghai' >/etc/timezone
 RUN yum install -y crontabs
 RUN echo "crond start" > /usr/src/cron.sh
 RUN ln -s /var/spool/cron/root /usr/src/jobs
